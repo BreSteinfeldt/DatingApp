@@ -10,6 +10,7 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { TimeagoModule } from 'ngx-timeago';
 import { TimeoutError } from 'rxjs';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { TimeoutError } from 'rxjs';
     PaginationModule.forRoot(),
     ButtonsModule.forRoot(),
     TimeagoModule.forRoot(),
+    ModalModule.forRoot(),
   ], 
   exports: [
     BsDropdownModule,
@@ -40,6 +42,7 @@ import { TimeoutError } from 'rxjs';
     PaginationModule,
     ButtonsModule,
     TimeagoModule,
+    ModalModule,
   ]
 })
 export class SharedModule { }
